@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="header-content">
+            <div>
+                <h2 style="font-family: 'Roboto', sans-serif; font-size: 38px; color: rgb(199, 191, 191);">Meu
+                    Portifólio</h2>
+            </div>
+
+            <div id="list">
+                <a href="" onclick="renderizar(1)" class="meuLink">Sobre</a>
+                <a href="" onclick="renderizar(2)" class="meuLink">Conhecimentos</a>
+                <a href="" onclick="renderizar(3)" class="meuLink">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="left">
+            <div id="left-img">
+                <img src="" alt="" style="height: 260px; width: 260px; border-radius: 100%;">
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="conteudos">
+                <div id="conteudo1" class="conteudo">
+                    <h4>IVAN SANTOS DA SILVA FILHO</h4>
+                    <p>Rua João Carlos, s/n, Barreira - CE</p>
+                    <br> <br>
+                    <h3>sou uma pessoa calma, objetiva, adoro tecnologia</h3> <br> <br>
+                    <a href="https://www.instagram.com/ivan19rx/"><img src="img/Instagram_icon.png.webp" alt=""
+                            style="height: 100px; width: 100px;"></a>
+                    <a href="https://github.com/ivan9rx"><img src="img/git_icon.png" alt=""
+                            style="height: 100px; width: 100px;"></a>
+                </div>
+
+
+
+                <div id="conteudo2" class="conteudo">
+                    <div>
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>JAVASCRIPT</li>
+                            <li>JAVA (BÁSICO)</li>
+                            <li>UM POUCO DE REACT</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="conteudo3" class="conteudo">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div>
+                            <img src="img/whas_icon.png" alt="" style="height: 50px;">
+                        </div>
+                        <h4>(85) 99129-9133</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+        let content1 = document.getElementById("conteudo1")
+        let content2 = document.getElementById("conteudo2")
+        let content3 = document.getElementById("conteudo3")
+
+        content1.style.display = "none";
+        content2.style.display = "none";
+        content3.style.display = "none";
+
+        let links = document.getElementsByClassName('meuLink');
+
+        console.log(links.id);
+
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', function (event) {
+                event.preventDefault();
+            });
+        }
+
+        function renderizar(id) {
+            if (id === 1) {
+                content1.style.display = 'block';
+                content2.style.display = "none";
+                content3.style.display = "none";
+            } else if (id === 2) {
+                content2.style.display = 'block';
+                content3.style.display = "none";
+                content1.style.display = 'none';
+            } else {
+                content3.style.display = 'block';
+                content1.style.display = 'none';
+                content2.style.display = 'none'
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
