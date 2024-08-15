@@ -2,90 +2,288 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,500&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - DevFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-    <header>
-        <div id="header-content">
-            <div>
-                <h2 style="font-family: 'Roboto', sans-serif; font-size: 38px; color: rgb(199, 191, 191);">Meu
-                    Portifólio</h2>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Meu portifólio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Projetos</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Olá, me chamo Ivan Santos</h2>
+        <p><span class="typed" data-typed-items="Full stack developer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/me.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Nome: </strong> <span>Ivan Santos</span></p>
+                <p><strong>Stack: </strong> <span>full stack developer</span></p>
+                <p><strong>Email: </strong> <span>ivansantos.oficial2010@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>(85) 99129-9133</span></p>
+              </div>
             </div>
 
-            <div id="list">
-                <a href="" onclick="renderizar(1)" class="meuLink">Sobre</a>
-                <a href="" onclick="renderizar(2)" class="meuLink">Conhecimentos</a>
-                <a href="" onclick="renderizar(3)" class="meuLink">Contato</a>
+            
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>Sobre mim</h4>
+              <p>
+                Sou Ivan Santos, estudante dedicado na EEEP Adolfo Ferreira de Sousa. Com uma forte paixão pela tecnologia e desenvolvimento, estou a caminho de me tornar um desenvolvedor full stack. Minha formação inclui o domínio de várias tecnologias essenciais para a construção de aplicações web, como HTML, CSS, PHP e Node.js. Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e habilidades na área de programação. Com uma abordagem prática e criativa para resolver problemas, estou pronto para contribuir e inovar em projetos de desenvolvimento.
+              </p>
             </div>
+          </div>
         </div>
-    </header>
 
-    <main>
+      </div>
 
-        <div id="left">
-            <div id="left-img">
-                <img src="" alt="" style="height: 260px; width: 260px; border-radius: 100%;">
+    </section><!-- /About Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projetos</h2>
+        <p>Veja alguns dos projetos que já realizei</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div id="img-service1">
+
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Sistema de agendamento para clínica odontológica</h3>
+              </a>
+              <p>Sistema freelancer desenvolvido para registrar agendamentos de uma clínica odontológica</p>
+              <p>Desenvolvido com PHP com o framework Codeigniter 4</p>
             </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div id="img-service2">
+
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Sistema notas de corte</h3>
+              </a>
+              <p>Sistema onde o administrador tem permissão para fazer o crud das notas de corte de acordo com a faculdade e o usuário normal pode visualizar e ver detalhes sobre o curso</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div id="img-service2">
+
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Sistema notas de corte</h3>
+              </a>
+              <p>Sistema onde o administrador tem permissão para fazer o crud das notas de corte de acordo com a faculdade e o usuário normal pode visualizar e ver detalhes sobre o curso</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
         </div>
 
-        <div id="right">
-            <div id="conteudos">
-                <div id="conteudo1" class="conteudo">
-                    <h4>IVAN SANTOS DA SILVA FILHO</h4>
-                    <p>Rua João Carlos, s/n, Barreira - CE</p>
-                    <br> <br>
-                    <h3>sou uma pessoa calma, objetiva, adoro tecnologia</h3> <br> <br>
-                    <a href="https://www.instagram.com/ivan19rx/"><img src="img/Instagram_icon.png.webp" alt=""
-                            style="height: 100px; width: 100px;"></a>
-                    <a href="https://github.com/ivan9rx"><img src="img/git_icon.png" alt=""
-                            style="height: 100px; width: 100px;"></a>
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
+              </div>
+            </div><!-- End Info Item -->
 
-
-
-                <div id="conteudo2" class="conteudo">
-                    <div>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JAVASCRIPT</li>
-                            <li>JAVA (BÁSICO)</li>
-                            <li>UM POUCO DE REACT</li>
-                        </ul>
-                    </div>
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
                 </div>
+              </div>
+            </div><!-- End Info Item -->
 
-                <div id="conteudo3" class="conteudo">
-                    <div style="display: flex; justify-content: space-around;">
-                        <div>
-                            <img src="img/whas_icon.png" alt="" style="height: 50px;">
-                        </div>
-                        <h4>(85) 99129-9133</h4>
-                    </div>
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
                 </div>
-            </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
         </div>
-    </main>
 
+      </div>
 
+    </section><!-- /Contact Section -->
 
+  </main>
 
+  <footer id="footer" class="footer accent-background">
 
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
 
+  </footer>
 
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-    <script src="js/index.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
