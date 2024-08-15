@@ -1644,3 +1644,11 @@ section,
   background-position: center;
   background-size: cover;
 }
+#img-service3 {
+  height: 200px;
+  border: solid 2px var(--accent-color);
+  border-radius: 10px;
+  background-image: url("../img/film-insight.png");
+  background-position: center;
+  background-size: cover;
+}
